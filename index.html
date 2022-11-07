@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .img-fluid{
+        background-size: contain;
+        margin-bottom: 40px ;
+        padding: 0;
+        width: 100vw;
+
+
+
+    }
+    .imagen{
+        width: 48rem;
+    }
+    .contenidoInicio{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Vacaciones en San andrés</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">inicio</a></li>
+            <li><a href="#">Tabla</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Formulario</a></li>
+          </ul>
+        </div>
+      </nav>
+      <img src="/img/imagen3.jpg" alt="Imagen Panoramica" class="img-fluid">
+
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>San Andrés</h4>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1">Inicio</a></li>
+        <li><a href="#section2">Tabla</a></li>
+        <li><a href="#section3">Video</a></li>
+        <li><a href="#section3">Formulario</a></li>
+      </ul><br>
+    </div>
+
+    <div class="col-sm-9">
+      <section class="contenidoInicio" id="inicio">
+        <img src="/img/imagen2.jpg" alt="" class="imagen">
+
+        <p>
+            San Andrés sigue siendo uno de los destinos turísticos de sol y playa favoritos de los turistas extranjeros y nacionales en Colombia, gracias a lo cual ha mantenido un flujo creciente de visitantes durante los últimos años, Tuve la oportunidad de experimentar, desde un paseo en paraíso, volando sostenido por un paracaídas amarrado a una lancha. Su comida, su gente es muy amigables, sus aguas cristalinas y playas de arena blanca son impresionantes.
+            </p>
+      </section>
+      <section class="tabla" id="tabla">
+        <div class="container">
+            <h2>Basic Table</h2>
+            <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>            
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>john@example.com</td>
+                </tr>
+                <tr>
+                  <td>Mary</td>
+                  <td>Moe</td>
+                  <td>mary@example.com</td>
+                </tr>
+                <tr>
+                  <td>July</td>
+                  <td>Dooley</td>
+                  <td>july@example.com</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+      </section>
+      <section class="video" id="video">
+        <h1>
+            san andrés, paraiso vacacional
+        </h1>
+        <p>
+            San Andrés, Uno de los destinos turísticos ideales para vacacionar en familia, con sus playas llenas de brisa y mar, con un ambiente mágico, lleno de aventura y diversidad en su mar lleno de colores y animales acuático.
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kvUMZyHKUvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      </section>
+      <section class="formulario" id="formulario">
+        <form class="form-horizontal" action="/action_page.php">
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="email">Email:</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="pwd">Password:</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Submit</button>
+              </div>
+            </div>
+          </form>
+      </section>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid footer">
+  <p>Cooperativa de San Andrés</p>
+  <p>contacto </p>
+  <p>Asesora Yulieth</p>
+</footer>
+
+</body>
+</html>
